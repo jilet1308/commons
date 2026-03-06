@@ -25,6 +25,7 @@
     <modules>
         <module>lib-parent</module>
         <module>config-server</module>
+        <module>lib-parent/shared</module>
     </modules>
 
     <properties>
@@ -47,10 +48,16 @@
         <spring-boot-starter-liquibase-test.version>4.0.3</spring-boot-starter-liquibase-test.version>
         <spring-boot-starter-security-test.version>4.0.3</spring-boot-starter-security-test.version>
         <spring-boot-starter-webmvc-test.version>4.0.3</spring-boot-starter-webmvc-test.version>
+        <log4j2.version>2.25.3</log4j2.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jdbc</artifactId>
