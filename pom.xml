@@ -23,9 +23,8 @@
         </developer>
     </developers>
     <modules>
-        <module>lib-parent</module>
+        <module>lib</module>
         <module>config-server</module>
-        <module>lib-parent/shared</module>
     </modules>
 
     <properties>
